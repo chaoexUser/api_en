@@ -21,7 +21,7 @@ Developers can obtain information such as currency transaction pairs, real-time 
 
 item|description|type
 --------|--------|--------
-id|编号|int
+id|number|int
 baseCurrencyId|Base currency id|int
 baseCurrencyName|Base currency name|string
 baseCurrencyNameEn|Base currency English name|string
@@ -84,7 +84,7 @@ sellAmountHighLimit|Maximum sell limit|decimal
 }
 ```
 
-## Obtain real-time quotes (first edition to be abandoned)
+## Obtain real-time quotes (First edition to be abandoned)
 
 * request_url：baseUrl + quote/realTime
 * method：GET
@@ -282,9 +282,7 @@ Company name/Individual name|Company application, please write the full name of 
 TEL|Cell phone number
 Company Business License Number/Personal ID Number|Company Business License Number/Personal ID Number
 Platform account|Corresponding platform account
-public-key|Your public key will be saved on the platform.
-The following will detail the generation and the use 
-of the public key
+public-key|Your public key will be saved on the platform.The following will detail the generation and the use of the public key
 
 >Note: Due to some force majeure factors, the application for API permissions for login, ordering, and withdrawal of orders cannot be provided by a separate page. Therefore, the application of the API call permission is currently supported by the method of mail application.
 
