@@ -2,8 +2,10 @@
 
 This article is the official document of the programmatic trading interface API provided by the CHAIN STAR TECHNOLOGY . We hope that through the document, the developers can implement the functions of the platform by themselves such as API application, verification, calling, debugging to realize programmatic trading on the platform of CHAIN STAR TECHNOLOGY.
 
-# Base Url
+# Platform Url
+* platform Url:https://www.chaoex.com
 
+# Base Url
 * baseUrl:https://www.chaoex.com/12lian/
 
 * Other platforms need request with an E-mail and open an interface before developing a programmatic interface API.
@@ -396,7 +398,7 @@ fdPassword|Transaction password, can be empty.|string
 num|number，Keep up to 8 decimal places after the decimal point|decimal
 price|Price, Keep up to 8 decimal places after the decimal point|decimal
 source|Programmatic transaction docking type, which is currently 5|int
-type|transaction docking type, which is currently 5|int
+type|transaction docking type, which is currently 1|int
 token|Request authentication, if the token expires, re-acquirement is needed.|string
 uid|User id|int
 local|languages，Chinese traditional, zh_TW、en are selectable.|string
@@ -587,7 +589,7 @@ beginTime|Query start date，format：2018-04-25|string
 endTime|Query end date，format：2018-04-26|string
 start|The starting point of the query, the default is 1, the maximum is 999|int
 size|Query amount|int
-status|Order status, unsuccessful = 0, partial transaction = 1, all transactions = 2, withdrawal = 4, all status = 10|int
+status|Order status, created and not dealed = 0, partial dealed = 1, all dealed = 2, withdrawal(including orders all cancled and cancled after partial dealed) = 4, all status = 10, active orders(including order status 0 and status 1) = 11, deafault value is 10|int
 buyOrSell|Buying and selling direction, 0 is all directions, 1 is to buy, 2 is to sell|int
 currencyId|Trade currency id|int
 baseCurrencyId|Base currency id|int
