@@ -6,7 +6,7 @@ This article is the official document of the programmatic trading interface API 
 * platform Url:https://www.chaoex.com
 
 # Base Url
-* baseUrl:https://www.chaoex.com/12lian/
+* baseUrl:https://www.chaoex.com/unique/
 
 * Other platforms need request with an E-mail and open an interface before developing a programmatic interface API.
 
