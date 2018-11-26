@@ -339,7 +339,7 @@ item|description|type
 --------|--------|--------
 email|Platform login name|string
 pwd|Platform login password|string
-timestamp|Timestamp|string
+timestamp|Timestamp with the timeZone GMT+8 format like this '2018-11-26T22:16:50Z'|string
 sign|Signature|string
 
 ## Front-end password encryption rules
