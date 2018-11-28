@@ -12,7 +12,7 @@ This article is the official document of the programmatic trading interface API 
 
 # Query
 
-Developers can obtain information such as currency transaction pairs, real-time quotes, transaction depth, and transaction history through the query interface. Currently, the query function does not require login authentication and pass the token. If the request pressure of the query increases, you may consider increasing the token and limiting the number of daily queries.
+Developers can obtain information such as currency transaction pairs, real-time quotes, transaction depth, and transaction history through the query interface. Currently, the query function does not require login authentication and pass the token. If the request pressure of the query increases, you may consider adding the token and limiting the number of daily queries.
 
 ## Currency transaction pairs obtainment
 
@@ -302,7 +302,7 @@ rsa_public_key.pem
 ```
 
 2.Then, send your public-key (that is, rsa_public_key.pem), username, and user uid to business-cn@chaoex.com.hk to apply.
-3.Each time you apply for API permissions such as login, order, and cancelorder, please use the sha256 algorithm and sign the parameters with the private key. I give a Javascript implementation here. 
+3.Each time you apply for API permissions such as login, Delegation order, and Delegation withdrawal, please use the sha256 algorithm and sign the parameters with the private key. I give a Javascript implementation here. 
 4.timestamp is the latest time
 
 ```javascript
@@ -320,7 +320,7 @@ console.log(signature.sign(APISECRET, 'hex'));
 ```
 
 
->When logging in, obtain the token with the user/password/signature. When using the functions of ordering, withdrawing, and ordering, the token is directly used.
+>When logging in, obtain the token with the user/password/signature. When using the functions of ordering, withdrawing, and orders query, the token is directly used.
 
 
 # Log in
@@ -401,7 +401,7 @@ source|Programmatic transaction docking type, which is currently 5|int
 type|transaction docking type, which is currently 1|int
 token|Request authentication, if the token expires, re-acquirement is needed.|string
 uid|User id|int
-local|languages，Chinese traditional, zh_TW、en are selectable.|string
+local|languages，Chinese traditional, zh_TW、en_US are selectable.|string
 timestamp|timestamp|string
 
 * response description：When the status interface returns is 200, the attachment contains the following data. If the status parameter is not 200, an abnormity occurs.
@@ -441,7 +441,7 @@ fdPassword|Transaction password|string
 source|Programmatic transaction docking type, which is currently 1|int
 token|Request authentication, if the token expires, re-acquirement is needed.|string
 uid|User id|int
-local|languanges，Chinese traditional, zh_TW、en are selectable.|string
+local|languanges，Chinese traditional, zh_TW、en_US are selectable.|string
 timestamp|timestamp|string
 
 * response description：When the status interface returns is 200, the attachment contains the following data. If the status parameter is not 200, an abnormity occurs.
@@ -472,7 +472,7 @@ item|description|type
 --------|--------|--------
 token|Request authentication, if the token expires, re-acquirement is needed.|string
 uid|User id|int
-local|languanges，Chinese traditional, zh_TW、en are selectable.|string
+local|languanges，Chinese traditional, zh_TW、en_US are selectable.|string
 timestamp|timestamp|string
 
 * response description：When the status interface returns is 200, the attachment contains the following data. If the status parameter is not 200, an abnormity occurs.
@@ -596,7 +596,7 @@ baseCurrencyId|Base currency id|int
 priceType|Price type, default is 0, indicating that 0 decimal places are reserved|
 token|Request authentication, if the token expires, re-acquirement is needed.|string
 uid|User id|int
-local|languanges，Chinese traditional, zh_TW、en are selectable.|string
+local|languanges，Chinese traditional, zh_TW、en_US are selectable.|string
 timestamp|timestamp|string
 
 * response description：When the status interface returns is 200, the attachment contains the following data. If the status parameter is not 200, an abnormity occurs.
