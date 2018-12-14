@@ -301,7 +301,7 @@ rsa_private_key.pem
 rsa_public_key.pem
 ```
 
-2.Then, send your public-key (that is, rsa_public_key.pem), username, and user uid to business-cn@chaoex.com.hk to apply.
+2.Then, send your public-key (that is, rsa_public_key.pem), username, and user uid to business-en@chaoex.com.hk to apply.
 3.Each time you apply for API permissions such as login, Delegation order, and Delegation withdrawal, please use the sha256 algorithm and sign the parameters with the private key. I give a Javascript implementation here. 
 4.timestamp is the latest time
 
