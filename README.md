@@ -3,10 +3,10 @@
 This article is the official document of the programmatic trading interface API provided by the CHAIN STAR TECHNOLOGY . We hope that through the document, the developers can implement the functions of the platform by themselves such as API application, verification, calling, debugging to realize programmatic trading on the platform of CHAIN STAR TECHNOLOGY.
 
 # Platform Url
-* platform Url:https://www.chaoex.com
+* platform Url:https://www.chaoex.io
 
 # Base Url
-* baseUrl:https://www.chaoex.com/unique/
+* baseUrl:https://www.chaoex.io/unique/
 
 * Other platforms need request with an E-mail and open an interface before developing a programmatic interface API.
 
