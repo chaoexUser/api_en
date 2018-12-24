@@ -178,7 +178,7 @@ baseCurrencyId|Base currency id|int
 }
 ```
 
-## 获取所有在线交易对实时行情
+## Obtain all real-time quotes
 
 - request_url：baseUrl + quote/v2/allRealTime
 - method：GET
