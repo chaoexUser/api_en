@@ -655,8 +655,8 @@ item|description|type
 --------|--------|--------
 beginTime|Query start date，format：2018-04-25|string
 endTime|Query end date，format：2018-04-26|string
-start|The starting point of the query, the default is 1, the maximum is 999|int
-size|Query amount|int
+start|The starting point of the query, the default is 1, The minimum is 1 and the maximum is 999.|int
+size|Query amount . Minimum value is 1, maximum value is 20|int
 status|Order status, created and not dealed = 0, partial dealed = 1, all dealed = 2, withdrawal(including orders all cancled and cancled after partial dealed) = 4, all status = 10, active orders(including order status 0 and status 1) = 11, deafault value is 10|int
 buyOrSell|Buying and selling direction, 0 is all directions, 1 is to buy, 2 is to sell|int
 currencyId|Trade currency id|int
